@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name = "keywords" content = "form, signup, account">
+    <meta name = "description" content = "This website allows
+    new user register an account">
+    <title>Sign up form</title>
+</head>
+
+<body>
+
+
+<h2>Please fill out this form to sign up.</h2>
+
+
+<form method="post" action="main.html"  autocomplete="on">
+
+    <p><label><strong>Name:</strong>
+        <input name="name" type="text" size="25"
+               maxlength="30" autofocus>
+    </label></p>
+    <p><label><strong>Surname:</strong>
+        <input name="surname" type="text" size="25"
+               maxlength="30" required>
+    </label></p>
+
+    <p><label><strong>Email:</strong>
+        <input type="email" name="emailaddress" required>
+    </label></p>
+
+    <p><label><strong>Tel:</strong>
+        <input type="tel" pattern="[0-9]{9}">
+    </label></p>
+
+    <p><label><strong>Gender:</strong></label><br>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+    </p>
+
+
+    <label><strong>Month of your birth: </strong></label>
+    <input list="month">
+    <datalist id="month">
+        <option value="January">
+        <option value="February">
+        <option value="March">
+        <option value="April">
+        <option value="May">
+        <option value="June">
+        <option value="July">
+        <option value="August">
+        <option value="September">
+        <option value="October">
+        <option value="November">
+        <option value="December">
+    </datalist>
+
+   <p>
+    <strong>How do you know about this site:</strong><br>
+        <label>Facebook
+            <input type="checkbox" value="Facebook">
+        </label>
+        <label>Instagram
+            <input  type="checkbox" value="Insta">
+        </label>
+        <label>Gmail
+            <input  type="checkbox" value="Gmail">
+        </label>
+            <label>Pinterest<input type="checkbox" value="Pin">
+        </label>
+        <label>Other
+            <input  type="checkbox" value="Code">
+        </label>
+    </p>
+
+    <p><label>Why would you like to join our commiunity:<br>
+        <textarea rows="4" cols="50" maxlength="200"></textarea>
+    </label></p>
+
+
+    <p>
+        <input type="submit" value="Sign up!">
+        <input type="reset" value="Clear">
+    </p>
+</form>
+</body>
+</html>
